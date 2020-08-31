@@ -1,0 +1,4 @@
+.vscode/
+.gitexclude/
+build/
+bin[s]/
