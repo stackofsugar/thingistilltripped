@@ -33,7 +33,6 @@ bool Distance::operator<(Distance& other){
 
 }
 
-
 int main(){
     Distance obj1, obj2;
     
@@ -41,8 +40,6 @@ int main(){
     cin >> obj1;
     cout << "And now, the object 2: ";
     cin >> obj2;
-
-    // cin >> obj1 >> obj2;
 
     cout << obj1 << obj2 << endl;
 
