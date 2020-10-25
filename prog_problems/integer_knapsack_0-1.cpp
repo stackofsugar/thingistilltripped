@@ -1,8 +1,5 @@
 /*
-input:
-4 8
-1 2 5 6
-2 3 4 5
+2020, Christopher Digno
 */
 
 #include <iostream>
@@ -33,14 +30,15 @@ int main() {
     }
 
     int copy_arr[g_n+1][g_K+1];  // alokasi array 2d (sebagai baris, pi wi) sebagai tabel int knapsack
-    for (int i = 0; i <= g_K; i++){ // inisiasi baris pertama
+
+    for (int i = 0; i <= g_K; i++){ // inisiasi baris pertama dengan 0
         copy_arr[0][i] = 0;
     }
-    for (int i = 0; i <= g_n; i++){ // inisiasi kolom pertama
+    for (int i = 0; i <= g_n; i++){ // inisiasi kolom pertama dengan 0
         copy_arr[i][0] = 0;
     }
 
-    for (int i = 1; i <= g_n; i++){
+    for (int i = 1; i <= g_n; i++){ // memulai pengisian array dengan algoritma
         for (int j = 1; j <= g_K; j++){
             if (j < wi[i-1]){
                 copy_arr[i][j] = copy_arr[i-1][j];
