@@ -18,7 +18,7 @@ int main(){
     else if (a > b){
         printf("a is bigger than b.");
     }
-    else if (a = b){
+    else if (a == b){
         printf("a is equal to b.");
     }
     printf("\n");
