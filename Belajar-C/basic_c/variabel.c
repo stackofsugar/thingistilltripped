@@ -15,8 +15,8 @@ int main(){
     a = 10; b = 20;
     c = 5.23f;
     d = 5.234512;
-    e = 'S';
-    f = "Salsabil Hasna Putri";
+    e = 'M';
+    f = "Michael Raditya Krisnadhi";
 
     /*Kita mencoba untuk memprint variabel ke layar kita*/
     printf("Int is: %i and %i", a,b);
